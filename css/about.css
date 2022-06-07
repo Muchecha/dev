@@ -1,30 +1,30 @@
-.about-bg {
-    height: 900px;
+.about {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 100px;
     background: linear-gradient(to right, #161616 50%, #FFFFFF 0%);
 }
 
-.about {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    gap: 40px;
-    padding-top: 60px;
+.about-container {
+    padding-top: 100px;
     padding-bottom: 60px;
     padding-left: 200px;
+
+}
+
+.about-imagem {
+    padding: 100px 100px 100px 0;
 }
 
 .about-imagem img {
-    padding-top: 60px;
-    padding-bottom: 100px;
     height: 650px;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
-    grid-area: 1/-1;
 }
 
 
 
-.about h1 {
+.about-container h1 {
     font-family: 'Cinzel';
     font-weight: 700;
     font-size: 72px;
@@ -34,7 +34,7 @@
     color: #F8752B;
 }
 
-.about h3 {
+.about-container h3 {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.08rem;
@@ -44,7 +44,7 @@
     color: #F8752B;
 }
 
-.about p {
+.about-container p {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -53,38 +53,57 @@
     width: 39ch;
 }
 
-@media (max-width: 1500px) {
-    .about-bg {
-        background: linear-gradient(to right, #161616 60%, #FFFFFF 0%);
+@media (max-width: 1400px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        background: linear-gradient(to bottom, #161616 70%, #FFFFFF 0%);
     }
-}
-@media (max-width: 1300px) {
-    .about-bg {
-        background: linear-gradient(to right, #161616 70%, #FFFFFF 0%);
+    .about-imagem {
+        padding: 70px;
+    }
+    .about-container {
+        padding-bottom: 30px;
+    }
+    .about-container p {
+        padding-bottom: 0px;
     }
 }
 
-@media (max-width: 1000px) {
-    .about-bg {
-        grid-template-columns: 1fr;
-        background: #161616;
+@media (max-width: 800px) {
+    .about-container {
+        padding: 0px;
+    }
+    .about-me {
+        padding: 50px 50px 20px 50px;
+    }
+    .about-imagem {
+        padding: 20px;
     }
     .about-imagem img {
-        display: none;
+        height: 500px;
+        width: 100%;
     }
-}  
+}
 
-@media (max-width: 840px) {
-    .about {
-        padding-left: 50px;
+@media (max-width: 500px) {
+    .about-imagem img {
+        height: 302px;
+        width: 100%;
     }
-    .about h1 {
+    .about-me {
+        padding: 10px;
+    }
+    .about-container h1 {
         font-size: 48px;
+        padding-bottom: 20px;
     }
-    .about h3 {
+    .about-container h3 {
         font-size: 16px;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
-    .about p {
-        font-size: 12px;
+    .about-container p {
+        font-size: 14px;
     }
 }
