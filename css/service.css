@@ -1,0 +1,138 @@
+.service {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(to left, #F8752B 30%, #FFFFFF 0%);
+}
+
+
+.services ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.service-bg {
+    margin-right: 100px;
+}
+
+
+.service-container h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08rem;
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    color: #F8752B;
+}
+
+.service-container {
+    padding-bottom: 100px;
+}
+
+.service-container h1 {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 30px;
+    letter-spacing: 0.01rem;
+    color: #161616;
+}
+
+.services h2 {
+    color: #161616;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.services h2::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 11px;
+    top: 18px;
+    right: 30px;
+    background: linear-gradient(180deg, #F95A00 0%, #E9192F 100%);
+    position: relative;
+}
+
+.services p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    width: 35ch;
+    color: #656565;
+}
+
+.service-imagem {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+}
+
+.services-imagem::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+    background: linear-gradient(180deg, #F95A00 0%, #E9192F 100%);
+    position: relative;
+}
+
+
+@media (max-width: 1400px) {
+    .services {
+        gap: 20px;
+    }
+    .service-container {
+        padding-bottom: 20px;
+    }
+    .service-container h1 {
+        font-size: 50px;
+    }
+    .services h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .services p {
+        font-size: 12px;
+        width: 25ch;
+    }
+    .services-ul {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .service {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .service,
+    .services ul{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .service {
+    background: linear-gradient(to left, #F8752B 30%, #FFFFFF 0%);
+    }
+}
