@@ -44,6 +44,7 @@
 
 @media (max-width: 600px) {
     .cypo {
+        padding-right: 10px;
         width: 25ch;
     }
     .icon-footer {

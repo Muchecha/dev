@@ -32,7 +32,9 @@
     display: flex;
     padding: 0px 200px;
     gap: 40px;
-    overflow: auto;
+    overflow-x: auto;
+    --webkit--overflow-scrolling: touch;
+    --ms--overflow-style: -ms-autohiding-scrollbar;
     min-width: 300px;
     cursor: pointer;
 }
