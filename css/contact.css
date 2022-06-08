@@ -1,0 +1,212 @@
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(to left, #F8752B 50%, #FFFFFF 0%);
+}
+
+.contact-bg {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+}
+
+.contact-imagem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+
+.contato {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px 100px 50px;
+    color: #FFFFFF;
+}
+
+.contato img {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-bg {
+    padding-left: 200px;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.formulario h1 {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 30px;
+    letter-spacing: 0.01rem;
+    padding-bottom: 130px;
+    color: #161616;
+}
+
+.formulario h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08rem;
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    color: #F8752B;
+}
+
+label {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #656565;
+    padding-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    font-size: 500 1rem/1.5 'Poppins';
+    background-color: #FFFFFF;
+    color: #161616;
+    padding: 12px;
+    border-color: #EEEEEE;
+    border-top: #FFFFFF;
+    border-left: #FFFFFF;
+    border-right: #FFFFFF;
+}
+
+.nome,
+.sobrenome,
+.email,
+.message {
+    padding-bottom: 30px;
+}
+
+.message{
+    padding-bottom: 70px;
+}
+
+.formulario button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 50px 25px 52px;
+    gap: 10px;
+    background: linear-gradient(180deg, #F8752B 0%, #F95A00 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    color: #FFFFFF;
+    border-bottom: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .contato {
+        padding: 100px 10px 100px 10px;
+    }
+    .contato img {
+        height: 20px;
+        width: 20px;
+    }
+    .formulario h1 {
+        font-size: 64px;
+    }
+}
+
+
+
+@media (max-width: 1160px) {
+    .formulario h1 {
+        font-size: 58px;
+    }
+    .formulario h3 {
+        font-size: 16px;
+    }
+    .contact a {
+        font-size: 14px;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    .contact-bg {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    .contact {
+        background: linear-gradient(to left, #F8752B 40%, #FFFFFF 0%);
+    }
+    .contact-bg {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background: linear-gradient(to top, #F8752B 18%, #FFFFFF 0%);
+    }
+    .contact-bg {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+    }
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 50px 35px 50px;
+    }
+    .nome,
+    .sobrenome,
+    .email,
+    .message {
+    padding-bottom: 20px;
+    }
+    .formulario h1 {
+        padding-bottom: 50px;
+    }
+    .formulario bottom {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        background: linear-gradient(to top, #F8752B 13%, #FFFFFF 0%);
+    }
+    .contato {
+        padding: 0px 10px 10px 0px;
+    }
+    .formulario {
+        padding-bottom: 30px;
+    }
+}

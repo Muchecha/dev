@@ -1,0 +1,55 @@
+.port-container {
+    display: grid;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.port {
+    padding-bottom: 100px;
+}
+
+.port-container h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08rem;
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    color: #F8752B;
+}
+
+.port-container h1 {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 30px;
+    letter-spacing: 0.01rem;
+    padding-bottom: 150px;
+    color: #161616;
+}
+
+.port-imagem {
+    display: flex;
+    padding: 0px 200px;
+    gap: 40px;
+    overflow: auto;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .port-imagem {
+        padding: 0px;
+    }
+    .port-container h1 {
+        font-size: 48px;
+        padding-bottom: 100px;
+    }
+    .port-container h3 {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .port {
+        padding-bottom: 20px;
+    }
+}
